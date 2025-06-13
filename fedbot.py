@@ -191,7 +191,8 @@ def resolve_appeal(update: Update, context: CallbackContext, status: AppealStatu
 
 # --- Bot Setup ---
 def main():
-    updater = Updater(BOT_TOKEN, use_context=True)
+    updater = Updater(BOT_TOKEN)
+
     dp = updater.dispatcher
     
     # User commands
